@@ -10,7 +10,7 @@ var rev = require('gulp-rev');
 var config = require('./webpack.config');
 
 gulp.task('default', function() {
-    return gulp.src('./src/pages/app/example.js',{base : './src/pages/app/'})
+    return gulp.src('./src/pages/app/*.js',{base : './src/pages/app/'})
         .pipe(webpack(config))
         .pipe(rev())
         .pipe(gulp.dest('build/assets'))

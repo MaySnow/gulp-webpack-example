@@ -3,8 +3,12 @@
  */
 
 module.exports = {
+    entry : {
+        app1 : './src/pages/app/example.js',
+        app2 : './src/pages/app/example2.js'
+    },
     output: {
         path: __dirname + "/build",
-        filename: "example.js"
+        filename: "[name].js"
     }
 };
